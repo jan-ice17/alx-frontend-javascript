@@ -1,7 +1,12 @@
-// This function returns a promise that currently resolves immediately without any additional value
+// 0-Promises
+//
 export default function getResponseFromAPI() {
-    // Creating a new promise that resolves immediately without any value
+    const success = true;
     return new Promise((resolve, reject) => {
-      resolve();
+      if (success) {
+        resolve();
+      } else {
+        reject();
+      }
     });
   }
